@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Module02 HTML Form</title>
+	</head>
+	<body>
+		<form action="thankyou.html" method="post">
+			<fieldset>
+				<legend>
+					User Information
+				</legend>
+				<label>
+					Enter your name:</label><br>
+					<input type="text" name="name" size="30" maxlength="100">
+				<br>
+				<label for="password">
+					Enter your password:</label><br>
+					<input id="password" type="password" name="password" required="required" size="30" maxlength="100">	
+				<br>
+				<label for="about">
+					Tell us about you
+				</label>
+				<br>
+					<textarea id="about" rows="6" cols="34">
+					</textarea>
+			</fieldset>		
+				<p>
+				Are you new to my site?
+				<br>
+				<label>
+					<input type="radio" name="new" value="yes">
+					yes
+				</label>
+				<label>
+					<input type="radio" name="new" value="no">
+					no
+				</label>
+				</p>
+				<label>
+					Do you want to subscribe to my blog?
+					<input type="checkbox" name="subscribe" checked="checked">
+				</label>
+				<p>
+				<label for="student-year">
+					What is your student's year?
+				</label>
+				<select name="year" id="student-year">
+					<option value="" disabled selected hidden>Select one option</option>
+					<option value="firstyear">First Year</option>
+					<option value="secondyear">Second Year</option>
+					<option value="thirdyear">Third Year</option>
+					<option value="fourthyear">Fourth Year</option>
+				</select>
+				</p>
+				<p>
+				Where did you hear about me?<br>
+				<select name="hear-about" size="3" multiple="multiple">
+					<option value="web">Web</option>
+					<option value="newspaper">Newspaper</option>
+					<option value="friends">Friends</option>
+					<option value="directmail">Direct mail</option>
+				</select>
+				</p>
+				<p>
+				<input type="submit" value="SEND">
+				</p>
+		</form>
+	</body>
+</html>
